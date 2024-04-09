@@ -26,14 +26,16 @@
 (defn send! [client msg]
   (ws/send! client (str msg endl)))
 
-(def channel "sodawavelive")
+(def channel "kingbunz")
 
 
 (auth client "bunzbot" (auth/get-token))
-(join-channel client channel)
+(join-channel client "sodawavelive")
+
 (comment
 
   (msg client channel "hello")
 
+
   
-  )
+)
